@@ -28,9 +28,9 @@ const About = () => {
                                 <li><FaReact className='about-icon'/></li>
                             </ul>
                         </div>
-                        <div class="about-resume">
+                        <div className="about-resume">
                             <h3>My Resume</h3>
-                            <div class="about-resume-icon">
+                            <div className="about-resume-icon">
                                 <a href="AdrianaCalvo-Matos_Resume.pdf" target="_blank"><FaFileDownload className='about-icon about-download'/></a>
                             </div>
                         </div>
