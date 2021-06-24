@@ -14,13 +14,14 @@
 
 body {
   font-family: "Lato", sans-serif;
-  text-transform: capitalize;
   background-color: var(--dark-colour);
   color: var(--primary-colour);
 }
 
-#hero,
-#about {
+section {
+  margin-top: 8rem;
+}
+.container {
   max-width: 80%;
   margin: auto;
   overflow: hidden;
@@ -30,11 +31,17 @@ body {
 h1 {
   font-size: 5rem;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 h2 {
   font-size: 4rem;
   font-weight: 300;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 1.4rem;
 }
 
 ul {
@@ -96,7 +103,7 @@ nav {
 }
 
 /* Hero */
-#hero {
+#hero .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,7 +151,7 @@ nav {
 }
 
 /* About */
-#about {
+#about .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
@@ -170,10 +177,25 @@ nav {
 #about .about-toolkit .about-icon,
 #about .about-resume .about-icon {
   font-size: 3rem;
-  margin: 0rem 1rem;
+  margin-right: 1rem;
   color: var(--primary-colour);
+}
+
+#about .about-toolkit-icon,
+#about .about-resume-icon {
+  margin-top: 1rem;
 }
 
 #about .about-resume .about-download:hover {
   color: var(--secondary-colour);
+}
+
+#about .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#about .about-text p {
+  margin-top: 1rem;
 }
