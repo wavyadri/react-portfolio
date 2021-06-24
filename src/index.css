@@ -1,13 +1,179 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+:root {
+  --dark-colour: #131313;
+  --primary-colour: #e3e4db;
+  --secondary-colour: #34a0ab;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+  background-color: var(--dark-colour);
+  color: var(--primary-colour);
+}
+
+#hero,
+#about {
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--dark-colour);
+}
+
+.nav-main {
+  min-height: 10vh;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: var(--dark-colour);
+  padding: 0 3rem;
+  /* background-color: var(--secondary-colour); */
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+}
+
+.nav-logo img {
+  max-width: 250px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  color: var(--primary-colour);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-colour);
+  transition: 0.2s ease;
+}
+
+/* Hero */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero .social-links {
+  display: flex;
+}
+
+#hero .social-links li {
+  margin: 0 1rem;
+}
+
+#hero .social-links .icon {
+  font-size: 2rem;
+}
+
+#hero .social-links a {
+  text-decoration: none;
+  color: var(--primary-colour);
+  background-color: var(--secondary-colour);
+  padding: 13px 13px;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+#hero .social-links a:hover {
+  color: var(--dark-colour);
+  background-color: var(--primary-colour);
+  transform: translateY(-10px);
+}
+
+#hero .type-text::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  border-right: 3px solid var(--secondary-colour);
+}
+
+/* About */
+#about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
+#about .about-img {
+  overflow: hidden;
+}
+
+#about .about-img img {
+  /* max-width: 100%; */
+  width: 500px;
+  height: auto;
+  border-radius: 1rem;
+}
+
+#about .about-toolkit .about-toolkit-icon {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+}
+
+#about .about-toolkit .about-icon,
+#about .about-resume .about-icon {
+  font-size: 3rem;
+  margin: 0rem 1rem;
+  color: var(--primary-colour);
+}
+
+#about .about-resume .about-download:hover {
+  color: var(--secondary-colour);
 }
