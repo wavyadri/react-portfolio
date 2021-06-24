@@ -11,7 +11,7 @@ const Nav = () => {
                     <Link to='/'><img src={logo} alt="logo" /></Link>
                 </div>
                 <ul className='nav-links'>
-                    <li><Link to='/'>home</Link></li>
+                    <li><Link to='/'>Home</Link></li>
                     <li><HashLink scroll to='/#about'>About</HashLink></li>
                     <li><HashLink scroll to='/#projects'>Projects</HashLink></li>
                     <li><HashLink to='/#contact'>Contact</HashLink></li>
