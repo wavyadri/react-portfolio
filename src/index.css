@@ -199,3 +199,72 @@ nav {
 #about .about-text p {
   margin-top: 1rem;
 }
+
+/* Projects */
+#projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#projects .card {
+  margin: 15px 15px 15px 0px;
+  height: 400px;
+  width: 300px;
+  border-radius: 4px;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+}
+
+#projects .card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+#projects .card .card-overlay {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  background: rgba(19, 19, 19, 0.85);
+  z-index: 200;
+}
+
+#projects .card .card-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#projects .card .card-icon .icon {
+  font-size: 2.4rem;
+  color: var(--primary-colour);
+}
+#projects .card .card-icon .icon:hover {
+  color: var(--secondary-colour);
+}
+
+#projects .card .card-text h2 {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--primary-colour);
+}
+
+#projects .card .card-text p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--primary-colour);
+}
+
+#projects .card:hover .card-overlay {
+  visibility: visible;
+}

@@ -4,7 +4,7 @@ export const data = [
         image: '/images/loruki.png',
         title: 'web services website',
         description: '3 page website with form',
-        category: ['html/css'],
+        category: ['HTML/CSS'],
         url: ''
     },
     {
@@ -12,7 +12,7 @@ export const data = [
         image: '/images/colour.png',
         title: 'web services website',
         description: 'gradient mobile responsive website',
-        category: ['html/css'],
+        category: ['HTML/CSS'],
         url: ''
     },
     {
@@ -20,7 +20,7 @@ export const data = [
         image: '/images/cocacola.png',
         title: 'product website',
         description: 'product feature page with image slider',
-        category: ['html/css'],
+        category: ['HTML/CSS'],
         url: ''
     },
     {
@@ -28,7 +28,7 @@ export const data = [
         image: '/images/netflix.png',
         title: 'subscription service website',
         description: 'subscription service landing page',
-        category: ['html/css'],
+        category: ['HTML/CSS'],
         url: ''
     },
     {
@@ -68,15 +68,15 @@ export const data = [
         image: '/images/eat-app.png',
         title: 'meal delivery app',
         description: 'meal delivery mobile app',
-        category: ['ux'],
+        category: ['UX'],
         url: ''
     },
     {
         id: 10,
-        image: '/images/tarot.png',
+        image: '/images/hike.png',
         title: 'hiking website',
         description: 'multi page website',
-        category: ['ux'],
+        category: ['UX'],
         url: ''
     },
     {
@@ -84,7 +84,7 @@ export const data = [
         image: '/images/wine.png',
         title: 'wine shop',
         description: 'e-commerce product slider',
-        category: ['ux'],
+        category: ['UX'],
         url: ''
     },
     {

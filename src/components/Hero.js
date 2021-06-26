@@ -11,9 +11,9 @@ const Hero = () => {
                 <h1>hi, I'm Adriana</h1>
                 <h2>typewriter</h2>
                 <ul className="social-links">
-                    <li><a className="btn btn-1" href="mailto:adriana.calvomatos@gmail.com?"><HiOutlineMail className='icon'/></a></li>
-                    <li><a className="btn btn-2" href="https://github.com/wavyadri" role="button" target="_blank"><AiOutlineGithub className='icon'/></a></li>
-                    <li><a className="btn btn-3" href="https://www.linkedin.com/in/adriana-cm/" role="button" target="_blank"><FaLinkedin className='icon'/></a></li>
+                    <li><a href="mailto:adriana.calvomatos@gmail.com?"><HiOutlineMail className='icon'/></a></li>
+                    <li><a href="https://github.com/wavyadri" role="button" target="_blank"><AiOutlineGithub className='icon'/></a></li>
+                    <li><a href="https://www.linkedin.com/in/adriana-cm/" role="button" target="_blank"><FaLinkedin className='icon'/></a></li>
                 </ul>
             </div>
         </section>
