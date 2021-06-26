@@ -1,7 +1,7 @@
 import React from 'react'
 import Adriana from '../images/adriana.jpg'
 import {FaFileDownload, FaHtml5, FaCss3Alt, FaSass, FaReact} from 'react-icons/fa'
-import {SiJavascript} from 'react-icons/si'
+import {SiJavascript, SiAdobexd, SiVisualstudio} from 'react-icons/si'
 
 const About = () => {
     return (
@@ -24,8 +24,10 @@ const About = () => {
                                 <li><FaHtml5 className='about-icon'/></li>
                                 <li><FaCss3Alt className='about-icon'/></li>
                                 <li><FaSass className='about-icon'/></li>
+                                <li><SiAdobexd className='about-icon'/></li>
                                 <li><SiJavascript className='about-icon'/></li>
                                 <li><FaReact className='about-icon'/></li>
+                                <li><SiVisualstudio className='about-icon'/></li>
                             </ul>
                         </div>
                         <div className="about-resume">

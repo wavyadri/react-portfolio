@@ -1,5 +1,6 @@
 import React from 'react'
-import data from './data'
+import {data} from './data'
+
 
 const Projects = () => {
 
@@ -10,7 +11,7 @@ const Projects = () => {
                 {data.map((item) => {
                     const {id, image, title} = item;
                     return <div key={id}>
-                        <img src={image} alt={id} />
+                        <img src={image} alt='' />
                         <h1>{title}</h1>
                     </div>
                 })} 
