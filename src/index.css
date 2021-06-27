@@ -201,6 +201,35 @@ nav {
 }
 
 /* Projects */
+#projects ul {
+  display: flex;
+  margin: 1.3rem 1.3rem 1.3rem 0rem;
+}
+
+#projects ul li {
+  list-style: none;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+#projects ul li .active {
+  border: 2px solid var(--secondary-colour);
+  border-radius: 2rem;
+  padding: 0.5rem 1.7rem;
+  color: var(--secondary-colour);
+}
+
+#projects ul li p {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 0.5rem 0;
+}
+
+#projects ul li p:hover {
+  color: var(--secondary-colour);
+  /* transition: 0.3s ease-in; */
+}
+
 #projects .projects-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -218,7 +247,6 @@ nav {
 #projects .card:hover {
   transform: scale(1.075);
   transition: 0.3s ease-in;
-  cursor: pointer;
 }
 
 #projects .card .card-overlay {
@@ -249,12 +277,22 @@ nav {
 }
 #projects .card .card-icon .icon:hover {
   color: var(--secondary-colour);
+  transition: 0.2s ease;
 }
 
 #projects .card .card-text h2 {
   font-size: 2.5rem;
+}
+
+#projects .card .card-text h2 a {
   text-decoration: none;
   color: var(--primary-colour);
+}
+
+#projects .card .card-text h2 a:hover {
+  text-decoration: none;
+  color: var(--secondary-colour);
+  transition: 0.2s ease;
 }
 
 #projects .card .card-text p {
