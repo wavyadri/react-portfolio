@@ -313,6 +313,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 15px;
 }
 
 #contact h3 {
@@ -336,5 +337,16 @@ nav {
 }
 
 #contact ul li {
-  margin: 0 1rem;
+  margin: 0px 1rem;
+}
+
+/* Footer */
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer p {
+  margin-bottom: 2rem;
 }
