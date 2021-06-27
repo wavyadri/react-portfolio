@@ -306,3 +306,35 @@ nav {
 #projects .card:hover .card-overlay {
   visibility: visible;
 }
+
+/* Contact */
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact h3 {
+  margin: 2rem 0;
+}
+
+#contact a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border: 2px solid var(--secondary-colour);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+#contact a:hover {
+  color: var(--secondary-colour);
+}
+
+#contact ul {
+  display: flex;
+}
+
+#contact ul li {
+  margin: 0 1rem;
+}
