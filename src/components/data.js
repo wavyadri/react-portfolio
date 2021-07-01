@@ -5,7 +5,8 @@ export const projects = [
         title: 'random quotes generator',
         description: 'API generated random quotes with preloader',
         category: 'javascript',
-        url: 'https://vibrant-visvesvaraya-8c3b76.netlify.app/'
+        url: 'https://vibrant-visvesvaraya-8c3b76.netlify.app/',
+        code: 'https://github.com/wavyadri/freeCodeCamp-Basic-JavaScript/tree/main/projects/front%20end%20libraries/random%20quote%20js',
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const projects = [
         title: 'quotes generator with react',
         description: 'API generated quotes with useState and useEffect hooks',
         category: 'react',
-        url: 'https://pensive-montalcini-3cac8a.netlify.app/'
+        url: 'https://pensive-montalcini-3cac8a.netlify.app/',
+        code: 'https://github.com/wavyadri/freeCodeCamp-Basic-JavaScript/tree/main/projects/front%20end%20libraries/random-quote-react',
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const projects = [
         title: 'product website',
         description: 'product feature page with image slider',
         category: 'HTML/CSS',
-        url: 'https://silly-panini-ba6b31.netlify.app/'
+        url: 'https://silly-panini-ba6b31.netlify.app/',
+        code: 'https://github.com/wavyadri/Coca-Cola-Website',
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const projects = [
         title: 'subscription service website',
         description: 'subscription service landing page',
         category: 'HTML/CSS',
-        url: 'https://inspiring-swartz-c96988.netlify.app/'
+        url: 'https://inspiring-swartz-c96988.netlify.app/',
+        code: 'https://github.com/wavyadri/Netflix-Landing-Page-Website'
     },
    {
         id: 5,
@@ -37,7 +41,8 @@ export const projects = [
         title: 'web services website',
         description: '3 page website with form',
         category: 'HTML/CSS',
-        url: 'https://angry-brown-2c67f4.netlify.app/'
+        url: 'https://angry-brown-2c67f4.netlify.app/',
+        code: 'https://github.com/wavyadri/Loruki-Website'
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const projects = [
         title: 'sign up form',
         description: 'form validation and error counter',
         category: 'javascript',
-        url:'https://vibrant-clarke-f8afc0.netlify.app/'
+        url:'https://vibrant-clarke-f8afc0.netlify.app/',
+        code: 'https://github.com/wavyadri/JS-Projects/tree/main/FORMS/Form%20Validation'
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ export const projects = [
         title: 'shopping list',
         description: 'CRUD list with JSON server',
         category: 'javascript',
-        url: 'https://distracted-hawking-24a274.netlify.app/'
+        url: 'https://distracted-hawking-24a274.netlify.app/',
+        code: 'https://github.com/wavyadri/JS-Projects/tree/main/LISTS/Shop%20List%202.0'
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ export const projects = [
         title: 'card game',
         description: 'API generated tarot cards',
         category: 'javascript',
-        url: 'https://festive-sammet-a5f298.netlify.app/'
+        url: 'https://festive-sammet-a5f298.netlify.app/',
+        code: 'https://github.com/wavyadri/JS-Projects/tree/main/APIs/Tarot%20Reading'
     },
     {
         id: 9,
@@ -93,7 +101,8 @@ export const projects = [
         title: 'web services website',
         description: 'gradient mobile responsive website',
         category: 'HTML/CSS',
-        url: 'https://unruffled-hawking-638cce.netlify.app/'
+        url: 'https://unruffled-hawking-638cce.netlify.app/',
+        code: 'https://github.com/wavyadri/Colours-Website',
     },
 ]
 
