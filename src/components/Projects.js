@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import ProjectNav from './ProjectNav'
 import {projects} from './data'
-import {FiExternalLink} from 'react-icons/fi'
+// import {FiExternalLink} from 'react-icons/fi'
+import {GoFileCode} from 'react-icons/go'
+import {CgScreen} from 'react-icons/cg'
 
 const Projects = () => {
     // remove duplicates
@@ -30,14 +32,19 @@ const Projects = () => {
                 <ProjectNav value={value} setValue={setValue} categories={categories} filterCategories={filterCategories}/>
                 <div className="projects-grid">
                     {projectsList.map((item) => {
-                    const {id, image, description, category, url} = item;
+                    const {id, image, description, category, url, code} = item;
                     return <div key={id} className="card" style={{backgroundImage: `url(${image})`}}>
                         <div className="card-overlay">
                             <div className="card-icon">
-                                <a href={url} target='_blank'><FiExternalLink className='icon'/></a>
+                                <a href={url} target='_blank'><CgScreen className='icon'/></a>
+                                <a href={code} target='_blank'><GoFileCode className='icon'/></a>
                             </div>
                             <div className="card-text">
-                                <h2><a href={url} target='_blank'>{description}</a></h2>
+                                <h2>
+                                    {/* <a href={url} target='_blank'> */}
+                                        {description}
+                                    {/* </a> */}
+                                </h2>
                                 <p>{category}</p>    
                             </div>
                         </div>

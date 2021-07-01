@@ -268,7 +268,7 @@ nav {
 
 #projects .card .card-icon {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 #projects .card .card-icon .icon {
