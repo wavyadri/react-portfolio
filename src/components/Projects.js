@@ -34,10 +34,10 @@ const Projects = () => {
                     return <div key={id} className="card" style={{backgroundImage: `url(${image})`}}>
                         <div className="card-overlay">
                             <div className="card-icon">
-                                <a href={url}><FiExternalLink className='icon'/></a>
+                                <a href={url} target='_blank'><FiExternalLink className='icon'/></a>
                             </div>
                             <div className="card-text">
-                                <h2><a href={url}>{description}</a></h2>
+                                <h2><a href={url} target='_blank'>{description}</a></h2>
                                 <p>{category}</p>    
                             </div>
                         </div>
