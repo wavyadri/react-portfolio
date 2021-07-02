@@ -1,5 +1,4 @@
 import React from 'react'
-import Typewriter from './Typewriter';
 import Typewriter3 from './Typewriter3';
 import {HiOutlineMail} from 'react-icons/hi'
 import {AiOutlineGithub} from 'react-icons/ai'

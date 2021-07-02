@@ -115,7 +115,7 @@ nav {
 }
 
 #hero .social-links li {
-  margin: 0 1rem;
+  margin: 1rem 1rem;
 }
 
 #hero .social-links .icon {
@@ -143,11 +143,20 @@ nav {
   transform: translateY(-10px);
 }
 
-#hero .type-text::after {
+/* #hero .type-text::after {
   content: "";
   width: 2px;
   height: 100%;
   border-right: 3px solid var(--secondary-colour);
+} */
+
+/* Typewriter */
+#typewriter {
+}
+
+#typewriter h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
 }
 
 /* About */
