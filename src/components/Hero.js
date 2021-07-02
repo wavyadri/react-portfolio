@@ -9,7 +9,8 @@ const Hero = () => {
         <section id='hero'>
             <div className="container">
                 <h1>hi, I'm Adriana</h1>
-                <h2>typewriter</h2>
+                <Typewriter />
+                {/* <h2>typewriter</h2> */}
                 <ul className="social-links">
                     <li><a href="mailto:adriana.calvomatos@gmail.com?"><HiOutlineMail className='icon'/></a></li>
                     <li><a href="https://github.com/wavyadri" role="button" target="_blank"><AiOutlineGithub className='icon'/></a></li>
