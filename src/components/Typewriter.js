@@ -6,10 +6,11 @@ const Typewriter = () => {
     let i = 0;
     let j = 0;
 
-    const [currentWord, setCurrentWord] = useState('');
+    const [currentWord, setCurrentWord] = useState([]);
     const charIndex = useRef(0);
     const textIndex = useRef(0);
     const [isDeleting, setIsDeleting] = useState(false);
+    const [isEnd, setIsEnd] = useState(false);
 
     // const loop = () => {
     //     setIsDeleting(false);
@@ -48,20 +49,27 @@ const Typewriter = () => {
         
         if (textIndex.current < text.length) {
             // if we're typing and we haven't completed the word
-            if (!isDeleting && charIndex.current <= text[textIndex.current].length) {
+            if (!isDeleting && charIndex.current < text[textIndex.current].length) {
                 setCurrentWord((value) => value + text[textIndex.current].charAt(charIndex.current))
-                charIndex.current += 1;
+                charIndex.current++;
             }
 
-            if (!isDeleting && charIndex.current > text[textIndex.current].length) {
+            // if(isDeleting && ) {
+            //     setCurrentWord((value) => value - text[textIndex.current].charAt(charIndex.current))
+            //     charIndex.current--;
+            // }
+            if(isDeleting && charIndex.current <= text[textIndex.current].length) {
+                setCurrentWord((value) => value - text[textIndex.current].charAt(charIndex.current))
+                charIndex.current--;
+            }
+
+            if (charIndex.current === text[textIndex.current].length) {
                 setCurrentWord(text[textIndex.current])
+                console.log(charIndex.current);
+                console.log(text[textIndex.current].length);
                 setIsDeleting(true)
             }
 
-            if(isDeleting && charIndex.current <= text[textIndex.current].length) {
-                setCurrentWord((value) => value - text[textIndex.current].charAt(charIndex.current))
-                charIndex.current -= 1;
-            }
 
             // if(isDeleting && charIndex.current <= text[i].length) {
             //     setCurrentWord((value) => value - text[i].charAt(charIndex.current))
@@ -75,10 +83,10 @@ const Typewriter = () => {
     useEffect(() => {
         setTimeout(() => {
             loopLoop()}, 300)
-        // return (() => {
-        //     clearTimeout(timeoutID);
-        // })
-    }, [currentWord])
+        return (() => {
+            clearTimeout();
+        })
+    }, [currentWord, setIsDeleting])
 
 
     return (
