@@ -44,6 +44,10 @@ h3 {
   font-size: 1.4rem;
 }
 
+p {
+  line-height: 1.25;
+}
+
 ul {
   list-style: none;
 }
@@ -69,7 +73,6 @@ nav {
   margin: auto;
   background-color: var(--dark-colour);
   padding: 0 3rem;
-  /* background-color: var(--secondary-colour); */
 }
 
 .nav-logo {
@@ -151,9 +154,6 @@ nav {
 } */
 
 /* Typewriter */
-#typewriter {
-}
-
 #typewriter h2 {
   font-size: 1.5rem;
   margin: 1rem 0;
@@ -167,27 +167,28 @@ nav {
 }
 
 #about .about-img {
+  width: 500px;
   overflow: hidden;
 }
 
 #about .about-img img {
-  /* max-width: 100%; */
-  width: 500px;
+  max-width: 100%;
   height: auto;
   border-radius: 1rem;
 }
 
-#about .about-toolkit .about-toolkit-icon {
-  text-decoration: none;
-  list-style: none;
-  display: flex;
+#about .about-toolkit,
+#about .about-resume {
+  padding-top: 1rem;
 }
 
 #about .about-toolkit .about-icon,
 #about .about-resume .about-icon {
   font-size: 3rem;
-  margin-right: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 5px;
   color: var(--primary-colour);
+  float: left;
 }
 
 #about .about-toolkit-icon,
@@ -202,10 +203,9 @@ nav {
 #about .about-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
-#about .about-text p {
+#about .about-me p {
   margin-top: 1rem;
 }
 
@@ -358,4 +358,60 @@ nav {
 
 #footer p {
   margin-bottom: 2rem;
+}
+
+/* Comp */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  #about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    background-color: red;
+  }
+
+  #about .about-img img {
+    /* width: 70%; */
+  }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  #hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 450px) {
 }
