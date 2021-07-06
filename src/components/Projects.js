@@ -41,9 +41,10 @@ const Projects = () => {
                             </div>
                             <div className="card-text">
                                 <h2>
-                                    {/* <a href={url} target='_blank'> */}
+                                    <a className='card-a' href={url} target='_blank'>
                                         {description}
-                                    {/* </a> */}
+                                    </a>
+                                    <div className="card-p">{description}</div>
                                 </h2>
                                 <p>{category}</p>    
                             </div>

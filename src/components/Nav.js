@@ -16,7 +16,6 @@ const Nav = () => {
         } else {
             linksContainerRef.current.style.height = '0px'
         }
-        
     }, [showLinks])
 
     return (
@@ -24,7 +23,7 @@ const Nav = () => {
             <div className='nav-main'>
                 <div className='nav-logo'>
                     <Link to='/'><img src={logo} alt="logo" /></Link>
-                    <button className='nav-toggle'><FaBars/></button>
+                    <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}><FaBars/></button>
                 </div>
                 <div className='nav-links-container' ref={linksContainerRef}>
                     <ul className='nav-links' ref={linksRef}>

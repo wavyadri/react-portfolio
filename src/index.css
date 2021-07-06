@@ -85,6 +85,12 @@ nav {
   max-width: 250px;
 }
 
+/* .nav-links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition); */
+/* } */
+
 .nav-links {
   display: flex;
   justify-content: flex-end;
@@ -105,12 +111,17 @@ nav {
   transition: 0.2s ease;
 }
 
+.nav-toggle {
+  display: none;
+}
+
 /* Hero */
 #hero .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #hero .social-links {
@@ -145,13 +156,6 @@ nav {
   background-color: var(--primary-colour);
   transform: translateY(-10px);
 }
-
-/* #hero .type-text::after {
-  content: "";
-  width: 2px;
-  height: 100%;
-  border-right: 3px solid var(--secondary-colour);
-} */
 
 /* Typewriter */
 #typewriter h2 {
@@ -304,6 +308,10 @@ nav {
   transition: 0.2s ease;
 }
 
+#projects .card .card-text .card-a {
+  display: none;
+}
+
 #projects .card .card-text p {
   margin-top: 10px;
   font-size: 1.3rem;
@@ -322,6 +330,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding-bottom: 15px;
 }
 
@@ -366,6 +375,21 @@ nav {
   .container {
     max-width: 90%;
   }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  #hero .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #about .container {
     display: flex;
     flex-direction: column;
@@ -378,40 +402,141 @@ nav {
     justify-content: center;
     align-items: center;
     width: 380px;
-    background-color: red;
   }
 
-  #about .about-img img {
-    /* width: 70%; */
+  #projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #projects .card {
+    margin: 0.5rem;
+    height: 400px;
+    width: 300px;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+    overflow: hidden;
   }
 }
 
 /* Tablet */
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
+  nav .nav-toggle {
+    display: block;
+    color: (var(--primary-colour));
+    background-color: var(--dark-colour);
+    text-decoration: none;
+    border: none;
+    font-size: 2rem;
+    transition: all 0.3s linear;
+    background: transparent;
   }
 
-  h1 {
-    font-size: 4rem;
+  .nav-toggle:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
   }
 
-  h2 {
-    font-size: 3rem;
+  .nav-main {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    padding: 0px;
   }
 
-  #hero .container {
+  .nav-logo {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .nav-logo img {
+    max-width: 250px;
+  }
+
+  .nav-links-container {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+  }
+
+  .nav-links a {
+    margin-left: 2rem;
+    color: var(--primary-colour);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .nav-links a:hover {
+    color: var(--secondary-colour);
+    transition: 0.2s ease;
+  }
+
+  #projects .card .card-text .card-a {
+    display: flex;
+  }
+
+  #projects .card .card-text .card-p {
+    display: none;
   }
 }
 
 /* Mobile */
 
 @media screen and (max-width: 450px) {
+  section {
+    margin-top: 4rem;
+  }
+  .container {
+    max-width: 100%;
+  }
+
+  #about .about-img {
+    width: 300px;
+  }
+
+  #projects ul {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin: 0.5rem 10px;
+  }
+
+  #projects ul li {
+    margin: 0.1rem 0px;
+  }
+
+  #projects ul li .active {
+    padding: 0.3rem 1rem;
+  }
+
+  #projects .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #projects .card .card-icon .icon {
+    display: none;
+  }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 0 1rem;
+  }
+  #projects .card {
+    margin: 15px 15px 15px 0px;
+    height: 400px;
+    width: 280px;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+    overflow: hidden;
+  }
 }
