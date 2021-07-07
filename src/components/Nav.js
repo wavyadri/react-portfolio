@@ -1,6 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react'
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 import logo from '../Adriana-logo.svg'
 import {FaBars} from 'react-icons/fa'
 
@@ -22,15 +22,15 @@ const Nav = () => {
         <nav> 
             <div className='nav-main'>
                 <div className='nav-logo'>
-                    <Link to='/'><img src={logo} alt="logo" /></Link>
+                    <Link onClick={() => scroll.scrollToTop()}><img src={logo} alt="logo" /></Link>
                     <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}><FaBars/></button>
                 </div>
                 <div className='nav-links-container' ref={linksContainerRef}>
                     <ul className='nav-links' ref={linksRef}>
-                        <li><Link to='/'>Home</Link></li>
-                        <li><HashLink scroll to='/#about'>About</HashLink></li>
-                        <li><HashLink scroll to='/#projects'>Projects</HashLink></li>
-                        <li><HashLink to='/#contact'>Contact</HashLink></li>
+                        <li><Link offset={-128} smooth={true} to='hero'>Home</Link></li>
+                        <li><Link offset={-128} smooth={true} to='about'>About</Link></li>
+                        <li><Link offset={-128} smooth={true} to='projects'>Projects</Link></li>
+                        <li><Link smooth={true} to='contact'>Contact</Link></li>
                     </ul>
                 </div>
             </div>
